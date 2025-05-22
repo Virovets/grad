@@ -1,0 +1,8 @@
+<div class="cards d-flex flex-wrap">
+    @for (item of data; track $index) {
+        <div class="card">
+            <span class="value">{{ item.value }}</span>
+            <p>{{ item.label }}</p>
+        </div>
+    }
+</div>

@@ -1,0 +1,31 @@
+<table class="table table-hover">
+    <thead>
+    <tr>
+        <th>Badge</th>
+        <th>Total Goals</th>
+        <th>Completed</th>
+        <th>In Progress</th>
+        <th>Not Started</th>
+        <th>Completion Rate</th>
+    </tr>
+    </thead>
+    <tbody>
+        @for (badge of badges; track $index) {
+            <tr>
+                <td class="d-flex align-items-center gap-3"><img src="1.png">{{ badge.title }}</td>
+                <td>{{ badge.totalGoals }}</td>
+                <td>{{ badge.completed }}</td>
+                <td>{{ badge.inProgress }}</td>
+                <td>{{ badge.notStarted }}</td>
+                <td>
+                    <div class="d-flex align-items-center gap-3">
+                        <div class="progress w-100">
+                            <div class="progress-bar" role="progressbar" [style.width.%]="badge.completionRate"></div>
+                        </div>
+                        <span class="progress-value">{{ badge.completionRate }}%</span>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

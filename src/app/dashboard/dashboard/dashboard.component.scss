@@ -1,0 +1,23 @@
+.container {
+  padding: 0 2rem 2rem;
+
+  .back {
+    font-size: 14px;
+    font-weight: 500;
+    color: #667085;
+  }
+
+  app-chart {
+    flex: 1;
+  }
+
+  app-summary-cards {
+    flex: 1;
+  }
+
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+}

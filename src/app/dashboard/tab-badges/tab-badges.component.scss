@@ -1,0 +1,19 @@
+.tabs {
+  margin: 1rem 0 2rem;
+}
+.tabs button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+.tabs button.active {
+  color: #0B7CDA;
+  padding: 4px;
+  border-bottom: 2px solid #0B7CDA;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}

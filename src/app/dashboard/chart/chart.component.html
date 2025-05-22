@@ -1,0 +1,21 @@
+<div class="title">Track Completion</div>
+<div class="chart-container">
+    <div class="donut-chart">
+        <div class="center-text">
+            <div class="number">50</div>
+            <div class="label">Total Students</div>
+        </div>
+    </div>
+    <div class="legends">
+        @for (seg of data.segments; track $index) {
+            <div class="legend">
+                <div class="item">
+                <span class="d-flex align-items-center">
+                    <span class="dot {{seg.type}}"></span> {{seg.label}}
+                </span>
+                    <span class="count">{{seg.value}}</span>
+                </div>
+            </div>
+        }
+    </div>
+</div>
