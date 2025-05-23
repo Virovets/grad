@@ -1,5 +1,6 @@
 .tabs {
   margin: 1rem 0 2rem;
+  border-bottom: 1px solid #EAEDF2;
 }
 .tabs button {
   background: none;
@@ -7,6 +8,7 @@
   cursor: pointer;
   font-size: 16px;
   font-weight: 500;
+  color: #667085;
 }
 .tabs button.active {
   color: #0B7CDA;
@@ -16,4 +18,18 @@
 
 .input-group {
   margin-bottom: 1rem;
+}
+
+.search-img {
+  position: absolute;
+  z-index: 1;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 10px;
+}
+
+.search-input {
+  padding-left: 35px;
 }
